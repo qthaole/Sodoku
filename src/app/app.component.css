@@ -1,0 +1,10 @@
+.row {
+    height: 45px;
+    background: darkolivegreen;
+    height: 45px;
+    text-align: center;
+}
+
+.col {
+    width: 45px;
+  }
