@@ -12,14 +12,18 @@
   <p>
     <button (click)="onClickSolve()" >Solve game</button>
     </p>
+    <p>
+      <button (click)="onClickSave()" >Save game</button>
+      </p>
   <br/>
   <table>
-    <ng-container *ngFor="let line of data; let i = index">
+    <ng-container *ngFor="let line of data[0]; let i = index">
       <tr class="row">
       <ng-container *ngFor="let digit of line; let j = index">
         <td id="{{i + ''+ j}}" class="col">{{digit == 0 ? '' : digit}}</td>
       </ng-container>
     </tr>
     </ng-container>
+    
   </table>
   
